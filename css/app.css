@@ -1,0 +1,206 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  canvas {
+    position: absolute;
+    top:-55px;
+    left:0;
+    z-index:-1;
+    width: 100%;
+  }
+
+  .contain {
+    height: 100%;
+  }
+
+  /* Titre */
+
+  .title {
+    padding: 40px;
+    font-size: 75px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+    color: red;
+  }
+  .title p { margin:0; }
+  #error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+  #code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+  #error {
+    color: #fff;
+    text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  #error span {
+    animation: upper 11s linear infinite;
+  }
+  #code span:nth-of-type(2) {
+    animation: lower 10s linear infinite;
+  }
+  #code span:nth-of-type(1) {
+    text-shadow: none;
+    opacity:.4;
+  }
+  @keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+      opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+      opacity:0.4; text-shadow: none; 
+    }
+  }
+  @keyframes lower {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+      opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+    }
+    19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+      opacity:0.4; text-shadow: none; 
+    }
+  }
+
+  /* Introduction */
+
+.p-introduction {
+  width: 100%;
+  /*height: 100vh;*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .2em;
+}
+
+.p-introduction__wrap {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 25vh;
+}
+
+.p-introduction__row a {
+ color: #fff;
+ text-decoration: none;
+}
+
+.p-introduction__row a:hover{
+  text-decoration: line-through;
+}
+
+/* Lien */ 
+
+.p-introduction__links {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.p-introduction__links a{
+  color: #fff;
+  font-size: 3.2vh;
+  letter-spacing: 0.7em;
+}
+
+
+/* Barre */
+
+.p-introduction__follow.is-shown {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 3s;
+  transition-delay: 3s;
+}
+
+.p-introduction__follow {
+  width: 15px;
+  height: 10vh;
+  overflow: hidden;
+  position: relative;
+  margin: 6vh auto 0;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.p-introduction__follow-in {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  -webkit-animation-name: loopFollow;
+  animation-name: loopFollow;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.p-introduction__follow-in--1 {
+  left: 0;
+}
+
+.p-introduction__follow-in--2 {
+  left: 50%;
+  margin-left: -1px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.p-introduction__follow-in--3 {
+  right: 0;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+
+/* Contenue */
+
+.container {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 45vh auto;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+}
+
+.project__image {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  padding: 0;
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+@media screen and (min-width:640px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width:320px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
