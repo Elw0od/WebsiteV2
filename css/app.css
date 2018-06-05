@@ -8,16 +8,10 @@ body {
 
 canvas {
   position: absolute;
-  top:55px;
   left:0;
   z-index:-1;
   width: 100%;
 }
-
-.contain {
-  height: 100%;
-}
-
 /* Titre */
 
 .title {
@@ -31,6 +25,7 @@ canvas {
 }
 .title p { 
   margin:0;
+  text-align: center;
 }
 
 #error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
@@ -126,7 +121,7 @@ position: relative;
 right: 0;
 bottom: 0;
 left: 0;
-top: 7vh;
+top: 25vh;
 text-align: -webkit-center;
 }
 
@@ -179,7 +174,7 @@ margin-bottom: 0;
 
 .portfolio {
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: repeat(3, 1fr);
 grid-column-gap: 40px;
 }
 
@@ -205,8 +200,38 @@ color: #ffffff;
 margin: 10px 0 5px;
 }
 
-@media screen and (min-width: 640px) {
-.portfolio {
-  grid-template-columns: repeat(3, 1fr);
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .portfolio {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .title {
+    font-size: 65px;
+    text-align: center;
+  }
+
+  .p-introduction__wrap {
+    top: 17vh;
+  }
+
+  .p-introduction__links a{
+    font-size: 5.2vh;
+    letter-spacing: 0.7em;
+    }
+
+  .container {
+    margin: 55vh auto;
+  }
+  
+  .portfolio {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 }
+

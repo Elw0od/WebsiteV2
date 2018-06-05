@@ -1,86 +1,99 @@
-<!DOCTYPE html><html lang='en' class=''>
-    <head>
-    
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
-<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/app.css">
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
-    <body>
-            <div class="title">
-                <p id="error">K<span>e</span>vin</p>
-                <p id="code">D<span>U</span><span>P</span>AS</p>
+<body>
+    <div class="title">
+        <p id="error">K<span>e</span>vin</p>
+        <p id="code">D<span>U</span><span>P</span>AS</p>
+    </div>
+    <canvas></canvas>
+    <div class="p-introduction">
+        <div class="p-introduction__wrap">
+            <div class="p-introduction__row">Interactive sketches with scrollreveal.js.</div>
+            <div class="p-introduction__row">Created by <a href="http://kevindupas.com">Kévin Dupas</a>.</div>
+            <div class="p-introduction__links">
+                <a href="https://github.com/Elw0od" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/KevinDupas" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="mailto:dupas.dev@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             </div>
-            <canvas></canvas>
-            <div class="p-introduction">
-                <div class="p-introduction__wrap">
-                    <div class="p-introduction__row">Interactive sketches with three.js.</div>
-                    <div class="p-introduction__row">Created by <a href="http://kevindupas.com">Kévin Dupas</a>.</div>
-                    <div class="p-introduction__links">
-                        <a href="https://github.com/Elw0od" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/KevinDupas" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="mailto:dupas.dev@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="p-introduction__follow">
-                        <span class="p-introduction__follow-in--1"></span>
-                        <span class="p-introduction__follow-in--2"></span>
-                        <span class="p-introduction__follow-in--3"></span>
-                    </div>
-                </div>
-            </div>
-        <div class="container">
-            <div class="portfolio">
-                <div class="project one">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Encrypt</h2>
-                    <div class="project__date">Posté le : 05.06.2018</div>
-                </div>
-                <div class="project one">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project one">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project two">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project two">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project two">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project three">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project three">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project three">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project four">
-                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
+            <div class="p-introduction__follow">
+                <span class="p-introduction__follow-in--1"></span>
+                <span class="p-introduction__follow-in--2"></span>
+                <span class="p-introduction__follow-in--3"></span>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="portfolio">
+            <div class="project one">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Encrypt</h2>
+                <div class="project__date">Posté le : 05.06.2018</div>
+            </div>
+            <div class="project one">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project one">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project two">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project two">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project two">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project three">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project three">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project three">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+            <div class="project four">
+                <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                <h2 class="project__name">Titre</h2>
+            </div>
+        </div>
+    </div>
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
-        window.sr = ScrollReveal({ reset: true });
-        sr.reveal('.one', { duration: 2000 }, 50);
-        sr.reveal('.two', { duration: 2000 }, 50);
-        sr.reveal('.three', { duration: 2000 }, 50);
-        sr.reveal('.four', { duration: 2000 }, 50);
+        window.sr = ScrollReveal({
+            reset: true
+        });
+        sr.reveal('.one', {
+            duration: 2000
+        }, 50);
+        sr.reveal('.two', {
+            duration: 2000
+        }, 50);
+        sr.reveal('.three', {
+            duration: 2000
+        }, 50);
+        sr.reveal('.four', {
+            duration: 2000
+        }, 50);
     </script>
-    </body>
-    </html>
+</body>
+
+</html>
