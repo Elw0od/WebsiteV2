@@ -17,64 +17,70 @@
                     <div class="p-introduction__row">Interactive sketches with three.js.</div>
                     <div class="p-introduction__row">Created by <a href="http://kevindupas.com">Kévin Dupas</a>.</div>
                     <div class="p-introduction__links">
-                        <a href="https://kevindupas.com"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="https://kevindupas.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Elw0od" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/KevinDupas" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="mailto:dupas.dev@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                     <div class="p-introduction__follow">
-                        <div class="p-introduction__follow-in p-introduction__follow-in--1"></div>
-                        <div class="p-introduction__follow-in p-introduction__follow-in--2"></div>
-                        <div class="p-introduction__follow-in p-introduction__follow-in--3"></div>
+                        <span class="p-introduction__follow-in--1"></span>
+                        <span class="p-introduction__follow-in--2"></span>
+                        <span class="p-introduction__follow-in--3"></span>
                     </div>
                 </div>
             </div>
         <div class="container">
             <div class="portfolio">
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project one">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
+                    <h2 class="project__name">Encrypt</h2>
+                    <div class="project__date">Posté le : 05.06.2018</div>
+                </div>
+                <div class="project one">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project one">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project two">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project two">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project two">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project three">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project three">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project three">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
-                    <h2 class="project__name">Titre</h2>
-                </div>
-                <div class="project">
-                    <img src="http://via.placeholder.com/350x200" alt="" class="project__image">
+                <div class="project four">
+                    <img src="http://via.placeholder.com/400x200" alt="" class="project__image">
                     <h2 class="project__name">Titre</h2>
                 </div>
             </div>
         </div>
-    <script src='https://threejs.org/build/three.min.js'></script>
-    <script src='https://threejs.org/examples/js/renderers/Projector.js'></script>
-    <script src='https://threejs.org/examples/js/renderers/CanvasRenderer.js'></script>
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: true });
+        sr.reveal('.one', { duration: 2000 }, 50);
+        sr.reveal('.two', { duration: 2000 }, 50);
+        sr.reveal('.three', { duration: 2000 }, 50);
+        sr.reveal('.four', { duration: 2000 }, 50);
+    </script>
     </body>
     </html>

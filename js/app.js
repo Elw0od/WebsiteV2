@@ -24,7 +24,7 @@ function render(ts) {
     y2d = pixel.y * scale + H / 2;
     if(x2d >= 0 && x2d <= W && y2d >= 0 && y2d <= H) {
       c = (Math.round(y2d) * imageData.width + Math.round(x2d)) * 4;
-      imageData.data[c] = 100;
+      imageData.data[c] = 255;
       imageData.data[c + 1] = 0;
       imageData.data[c + 2] = 0;
       imageData.data[c + 3] = 255;
