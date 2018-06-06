@@ -13,7 +13,7 @@ for (var x = -400; x < 400; x += 5) {
 function render(ts) {
   var imageData = ctx.getImageData(0, 0, W, H),
       len = pixels.length,
-      fov = 250,
+      fov = 250, // Champ de vision / Field of view
       pixel, scale,
       x2d, y2d, c;
 
@@ -24,10 +24,10 @@ function render(ts) {
     y2d = pixel.y * scale + H / 2;
     if(x2d >= 0 && x2d <= W && y2d >= 0 && y2d <= H) {
       c = (Math.round(y2d) * imageData.width + Math.round(x2d)) * 4;
-      imageData.data[c] = 255;
-      imageData.data[c + 1] = 0;
-      imageData.data[c + 2] = 0;
-      imageData.data[c + 3] = 255;
+      imageData.data[c] = 255; // Opacité / Opacity -> 0 à 255 / 0 at 255
+      imageData.data[c + 1] = 0; // Couleur / Color -> 0 à 255 / 0 at 255
+      imageData.data[c + 2] = 0; // Couleur / Color -> 0 à 255 / 0 at 255
+      imageData.data[c + 3] = 255; // Couleur / Color -> 0 à 255 / 0 at 255
     }
     pixel.z -= 0.4;
     pixel.y = H / 14 + Math.sin(i / len * 15 + (ts / 450)) * 10;
@@ -38,7 +38,7 @@ function render(ts) {
 
 (function drawFrame(ts){
   requestAnimationFrame(drawFrame, canvas);
-  ctx.fillStyle = '#00000';
+  ctx.fillStyle = '#00000'; // Couleur de fond / Background Color
   ctx.fillRect(0, 0, W, H);
   render(ts);
 }());
