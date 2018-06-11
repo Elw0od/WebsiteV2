@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+        https://lab.kevindupas.com/DailyUI/One/
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Kevin Dupas - Website</title>
+    <meta property="og:title" content="Kevin Dupas - Website"/>
+    <meta property="og:site_name" content="Kevin Dupas" />
+    <meta property="og:description" content="It's a Kevin Dupas Portfolio" />
+    <meta property="og:type" content="index.html"/>
+    <meta property="og:url" content="https://www.kevindupas.com" />
+    <meta property="og:image" content="https://via.placeholder.com/400x200" />
+    <meta property="og:locale" content="fr_FR" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="css/apps.css">
+</head>
+<body>
+    <div class="title title_cv">
+        <p id="title__red">Curr<span>i</span>culum </p>
+        <p id="title__white">V<span>i</span><span>tae</span></p>
+    </div>
+    <canvas style="top: 0%"></canvas>
+    <div class="container__project" style="margin: 30vh auto;">
+        <div class="project__wrap">
+            <div class="project__row one">
+                <a href="cv.pdf" target="_blank">
+                    <img src="img/cv1.png" alt="" class="project__image">
+                </a>
+                <button class="btn left"><a href="img/cv1.ai" target="_blank">CV Ai</a></button>
+                <button class="btn right"><a href="img/cv1.pdf" target="_blank">CV PDF</a></button>
+            </div>
+            <div class="project__row one">
+                <a href="https://lab.kevindupas.com/DailyUI/Two/" target="_blank">
+                    <img src="https://via.placeholder.com/230x300" alt="" class="project__image">
+                </a>
+                <button class="btn left"><a href="cv.ai" target="_blank">CV AI / PSD</a></button>
+                <button class="btn right"><a href="cv.pdf" target="_blank">CV PDF</a></button>
+            </div>
+            <div class="project__row one">
+                <a href="https://lab.kevindupas.com/DailyUI/Two/" target="_blank">
+                    <img src="https://via.placeholder.com/230x300" alt="" class="project__image">
+                </a>
+                <button class="btn left"><a href="cv.ai" target="_blank">CV AI / PSD</a></button>
+                <button class="btn right"><a href="cv.pdf" target="_blank">CV PDF</a></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({
+            reset: true
+        });
+        sr.reveal('.one', {
+            duration: 2000
+        }, 50);
+        sr.reveal('.two', {
+            duration: 2000
+        }, 50);
+        sr.reveal('.three', {
+            duration: 2000
+        }, 50);
+        sr.reveal('.four', {
+            duration: 2000
+        }, 50);
+    </script>
+</body>
+</html>

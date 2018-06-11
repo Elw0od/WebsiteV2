@@ -167,12 +167,12 @@ canvas {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin-left: 2vh;
+	margin-left: 4vh;
 }
 
 .p-introduction__links a {
 	color: #fff;
-	font-size: 3.2vh;
+	font-size: 4.2vh;
 	letter-spacing: 0.7em;
 }
 
@@ -184,7 +184,7 @@ canvas {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	top: 20vh;
+	top: 25vh;
 	text-align: -webkit-center;
 }
 
@@ -247,12 +247,12 @@ canvas {
 }
 
 .project__row {
+	cursor: pointer;
 	margin-bottom: 60px;
 }
 
 .project__row a {
 	text-decoration: none;
-	cursor: pointer;
 }
 
 .project__image {
@@ -271,25 +271,6 @@ canvas {
 	padding: 0;
 	color: #ffffff;
 	margin: 10px 0 5px;
-}
-
-.btn {
-    font-size: 17px;
-    padding: 10px;
-    background: none;
-    border: solid #DD380D 1px;
-    text-decoration: none;
-    display: inline-block;
-	cursor: pointer;
-}
-
-.btn a {
-	text-decoration: none;
-	color: #DD380D;
-}
-
-.right {
-	float: right;
 }
 
 /* Media Query */
@@ -317,15 +298,11 @@ canvas {
 
 @media (min-width: 320px) and (max-width: 480px) {
 	.title {
-		padding: 20px;
-    	font-size: 60px;
-	}
-	.title_cv {
-		font-size: 34px;
+		font-size: 65px;
 		text-align: center;
 	}
 	.p-introduction__wrap {
-		top: 15vh;
+		top: 17vh;
 	}
 	.p-introduction__links {
 		margin-left: 4vh;
